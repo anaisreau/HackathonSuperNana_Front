@@ -1,36 +1,47 @@
 import React from 'react'
-import { Image, Button} from 'semantic-ui-react'
+import { Image, Button, Modal, Header} from 'semantic-ui-react'
 import logo from '../logo.png'
 import '../components/Homepage.css'
 import {Link} from 'react-router-dom'
-
+import traitment from '../traitement.png'
+import map from '../map.png'
 
 function HomePage() {
 
 
     return (
         <>
-    < img className ='logo' src={logo}/>    
- <div className='body'>
+    <img className ='logo' src={logo}/>    
+    
+<div className='body'>
+ <Modal trigger={<Button className='aboutus'>About us</Button>} basic size='small'>
+    <Header icon='user' content='Who are us ?' />
+    <Modal.Content>
+      <p>
+      We are four women who have converted professionally 
+      and decided to take training at the Wild Code School in order 
+      to begin web developers. 
+      This is a project that we carried out during the Hackathon in partnership with Doctolib
+      </p>
+    </Modal.Content>
+  </Modal>
 
-
-
-
+<br/>
 <p>
 This website is intended to offer you health travel destinations according to two categories:
 <ul>Research by treatment or need</ul>
 <ul>Research by destination</ul>
 Click on the images below and access your preferred search mode</p>
-
+<br/>
 <div className='ResearchChoice'>
-<Link to ='/traitment'>
-    <Button color ='red'>Search by traitment or need <Image classname='photo' src ='https://www.peillon.fr/wp-content/uploads/2018/09/mutuelle-sante-795x413.jpg' 
-alt='health'size='medium' circular width ='50%'/></Button>
+    
+<Link to ='/searchTraitment'>
+<Image classname='photo' src ={traitment} 
+alt='health'size='small' /><p>Search by treatment</p></Link>
 
-</Link>
-<Link to ='/destination'>
-<Button color ='red'>Search by destination<Image classname='photo' src ='https://lh3.googleusercontent.com/proxy/Ua1ToxWpi-LldkPVduAVsRtMwY0Wb7XG2VXYOB7uH-Drgyiqym14qOSRiIOBVNPNq2pW6e8gUO0aN9QYQ2TCDWgN2SNxGfreD9C8C-d-MQ' alt='health'size='medium' circular/></Button>
-</Link>
+<Link to ='/searchDestination'>
+<Image classname='photo' src ={map} alt='health'size='small' />
+<p>Search by destination</p></Link>
 </div>
  </div>
 </>

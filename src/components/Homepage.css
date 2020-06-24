@@ -6,10 +6,20 @@ p{
 .logo{
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    width: 300px;
 }
 
 .ResearchChoice{
     display: flex;
     justify-content: space-evenly;
+}
+
+.aboutus{
+    background-color: #e63946 !important;
+    color : white !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important ;
+   
 }

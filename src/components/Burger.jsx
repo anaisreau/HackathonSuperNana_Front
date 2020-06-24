@@ -28,7 +28,7 @@ class MobileContainer extends Component {
       as={Sidebar.Pusher}>
 
       <Sidebar 
-      color ='blue'
+      className='nav'
       inverted
         as={Menu}
         animation='push'
@@ -37,32 +37,21 @@ class MobileContainer extends Component {
         visible={sidebarOpened}
       >
           <Menu.Item as='a'><Link to ='/' onClick={this.handleSidebarHide}><Icon name ='home'></Icon>Home Page</Link></Menu.Item>
-          <Menu.Item as='a'><Link to ='/traitment'onClick={this.handleSidebarHide}><Icon name ='treatment'></Icon>Search by Traitment</Link></Menu.Item>
-          <Menu.Item as='a'><Link to ='/destination'onClick={this.handleSidebarHide}><Icon name ='plane'></Icon> Search by Destination</Link></Menu.Item>
+          <Menu.Item as='a'><Link to ='/searchTraitment'onClick={this.handleSidebarHide}><Icon name ='treatment'></Icon>Search by Traitment</Link></Menu.Item>
+          <Menu.Item as='a'><Link to ='/searchDestination'onClick={this.handleSidebarHide}><Icon name ='plane'></Icon> Search by Destination</Link></Menu.Item>
           
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
           
          
-              <Menu color ='blue' inverted>
+              <Menu className='nav' inverted>
                 <Menu.Item onClick={this.handleToggle}className='nav'>
                   <Icon name='sidebar' />
                 </Menu.Item>
 
-                <Menu.Item position='right'>
-                  <Modal trigger={<Button color='red'>About us </Button>} basic size='small'>
-    <Header icon='user' content='Who are us ?' />
-    <Modal.Content>
-      <p>
-      We are four women who have converted professionally 
-      and decided to take training at the Wild Code School in order 
-      to begin web developers. 
-      This is a project that we carried out during the Hackathon in partnership with Doctolib
-      </p>
-    </Modal.Content>
-   
-  </Modal>
+                <Menu.Item position='left'>
+                <Link to ='/'><Icon name ='heartbeat'></Icon>Health travel</Link>
                 </Menu.Item>
 </Menu>
                

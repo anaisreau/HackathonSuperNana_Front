@@ -37,7 +37,7 @@ class MobileContainer extends Component {
         visible={sidebarOpened}
       >
           <Menu.Item as='a'><Link to ='/' onClick={this.handleSidebarHide}><Icon name ='home'></Icon>Home Page</Link></Menu.Item>
-          <Menu.Item as='a'><Link to ='/searchTraitment'onClick={this.handleSidebarHide}><Icon name ='treatment'></Icon>Search by Traitment</Link></Menu.Item>
+          <Menu.Item as='a'><Link to ='/searchTreatment'onClick={this.handleSidebarHide}><Icon name ='treatment'></Icon>Search by Treatment</Link></Menu.Item>
           <Menu.Item as='a'><Link to ='/searchDestination'onClick={this.handleSidebarHide}><Icon name ='plane'></Icon> Search by Destination</Link></Menu.Item>
           
         </Sidebar>

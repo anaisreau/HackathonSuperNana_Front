@@ -1,0 +1,43 @@
+.cardsContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.cards {
+    display: flex;
+    flex-flow: column;
+}
+
+.card, ui container cards{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-style:1px solid !important;
+    border-color: #e63946 !important;
+}
+
+.cardContent {
+    margin-left: 2vw;
+    text-align: center;
+    color: #e63946 !important;
+}
+
+.cardHeader {
+    font-size: 3vw;
+    color: #e63946 ! important;
+}
+
+.cardDesc {
+    font-size: 2.3vw;
+}
+
+img {
+    width: 6vw;
+    border-style:solid 1px !important;
+    border-color: #e63946 !important;
+    background-color :white!important; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+

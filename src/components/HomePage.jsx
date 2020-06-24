@@ -35,7 +35,7 @@ Click on the images below and access your preferred search mode</p>
 <br/>
 <div className='ResearchChoice'>
     
-<Link to ='/searchTraitment'>
+<Link to ='/searchTreatment'>
 <Image classname='photo' src ={traitment} 
 alt='health'size='small' /><p>Search by treatment</p></Link>
 

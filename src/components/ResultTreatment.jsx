@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ResultTraitment() {
+function ResultTreatment() {
 
 
     return (
@@ -11,4 +11,4 @@ function ResultTraitment() {
     )
 }
 
-export default ResultTraitment
+export default ResultTreatment

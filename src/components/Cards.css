@@ -1,0 +1,15 @@
+.cardContent {
+    margin-left: 2vw;
+}
+
+.cardHeader {
+    font-size: 3vw;
+    color: #457b9d;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+

@@ -1,11 +1,13 @@
 import React from 'react';
+import TreatmentPage from './components/TreatmentPage'
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <TreatmentPage />
+    </>
   );
 }
 

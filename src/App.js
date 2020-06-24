@@ -1,12 +1,12 @@
 import React from 'react';
-import TreatmentPage from './components/TreatmentPage'
+import TreatmentChoice from './components/TreatmentChoice'
 import './App.css';
 
 
 function App() {
   return (
     <>
-      <TreatmentPage />
+      <TreatmentChoice />
     </>
   );
 }

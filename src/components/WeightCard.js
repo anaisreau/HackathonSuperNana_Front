@@ -11,11 +11,11 @@ const WeightCard = () => {
             <Card className='card'>
                 <Image src={Orion_weighing} wrapped ui={false}/>
                 <Card.Content className='cardContent'>
-                <Card.Header className='cardHeader'>Perte de poids</Card.Header>
+                <Card.Header className='cardHeader'>WEIGHT LOSS SURGERY</Card.Header>
                 <Card.Description className='cardDesc'>
-                    Anneau gastrique réglable
+                    Adjustable Gastric Banding
                     <br/>
-                    Manchon gastrique
+                    Gastric Sleeve
                 </Card.Description>
                 </Card.Content>
             </Card>

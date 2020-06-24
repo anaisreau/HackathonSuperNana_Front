@@ -11,11 +11,11 @@ const SurgeryCard = () => {
             <Card className='card'>
                 <Image src={Orion_user} wrapped ui={false}/>
                 <Card.Content className='cardContent'>
-                <Card.Header className='cardHeader'>Chirurgie esthétique</Card.Header>
+                <Card.Header className='cardHeader'>COSMETIC SURGERY</Card.Header>
                 <Card.Description className='cardDesc'>
-                    Augmentation mammaire
+                    Breast Augmentation
                     <br/>
-                    Visage et regard
+                    Face and eyes
                 </Card.Description>
                 </Card.Content>
             </Card>

@@ -11,11 +11,11 @@ const ProcreationCard = () => {
             <Card className='card'>
                 <Image src={Orion_fertility} wrapped ui={false}/>
                 <Card.Content className='cardContent'>
-                <Card.Header className='cardHeader'>Procréation</Card.Header>
+                <Card.Header className='cardHeader'>SURROGACY</Card.Header>
                 <Card.Description className='cardDesc'>
-                    Fécondation in vitro (FIV)
+                    In Vitro Fertilization (IVF)
                     <br/>
-                    Infertilité masculine
+                    Male Infertility
                 </Card.Description>
                 </Card.Content>
             </Card>

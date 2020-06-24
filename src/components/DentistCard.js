@@ -11,9 +11,9 @@ const DentistCard = () => {
             <Card className='card'>
                 <Image src={Orion_tooth} wrapped ui={false}/>
                 <Card.Content className='cardContent'>
-                <Card.Header className='cardHeader'>Dentaire</Card.Header>
+                <Card.Header className='cardHeader'>DENTISTRY</Card.Header>
                 <Card.Description className='cardDesc'>
-                    Prothèses
+                    Dental prosthesis
                     <br/>
                     Implants
                 </Card.Description>

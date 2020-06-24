@@ -1,7 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar'
 import DentistCard from './DentistCard';
-// import NeurologyCard from './NeurologyCard'
 import ProcreationCard from './ProcreationCard'
 import SurgeryCard from './SurgeryCard'
 import WeightCard from './WeightCard';
@@ -25,7 +24,6 @@ function TreatmentPage() {
                 <SurgeryCard />
                 <WeightCard />
             </Container>
-            {/* <NeurologyCard /> */}
 
         </Container>
     </>

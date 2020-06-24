@@ -12,7 +12,7 @@ const ProcreationCard = () => {
                 <Image src={Orion_fertility} wrapped ui={false}/>
                 <Card.Content className='cardContent'>
                 <Card.Header className='cardHeader'>Procréation</Card.Header>
-                <Card.Description>
+                <Card.Description className='cardDesc'>
                     Fécondation in vitro (FIV)
                     <br/>
                     Infertilité masculine

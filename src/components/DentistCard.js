@@ -12,10 +12,10 @@ const DentistCard = () => {
                 <Image src={Orion_tooth} wrapped ui={false}/>
                 <Card.Content className='cardContent'>
                 <Card.Header className='cardHeader'>Dentaire</Card.Header>
-                <Card.Description>
-                    Placages / stratifiés
+                <Card.Description className='cardDesc'>
+                    Prothèses
                     <br/>
-                    Implants dentaires
+                    Implants
                 </Card.Description>
                 </Card.Content>
             </Card>

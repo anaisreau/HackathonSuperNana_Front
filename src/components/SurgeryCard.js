@@ -12,7 +12,7 @@ const SurgeryCard = () => {
                 <Image src={Orion_user} wrapped ui={false}/>
                 <Card.Content className='cardContent'>
                 <Card.Header className='cardHeader'>Chirurgie esthétique</Card.Header>
-                <Card.Description>
+                <Card.Description className='cardDesc'>
                     Augmentation mammaire
                     <br/>
                     Visage et regard

@@ -1,3 +1,9 @@
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .cardContent {
     margin-left: 2vw;
 }
@@ -7,9 +13,11 @@
     color: #457b9d;
 }
 
-.card {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.cardDesc {
+    font-size: 2.3vw;
+}
+
+img {
+    width: 6vw;
 }
 

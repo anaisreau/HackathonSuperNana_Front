@@ -5,7 +5,7 @@ function ResultTreatment() {
 
     return (
  <>
-
+    <p>Coucou</p>
  </>
 
     )

@@ -17,9 +17,9 @@ function Router() {
             <Switch>
                 <Route exact path='/' component={HomePage} />
                 <Route path='/searchtreatment' component={TreatmentChoice} />
-                <Route path='/searchDestination' component={SearchDestination} />
-                <Route path='/resultTreatment' component={ResultTreatment} />
-                <Route path='/resultDestination' component={ResultDestination} />
+                <Route path='/searchdestination' component={SearchDestination} />
+                <Route path='/resulttreatment' component={ResultTreatment} />
+                <Route path='/resultdestination' component={ResultDestination} />
             </Switch>
          </ResponsiveContainer>
          

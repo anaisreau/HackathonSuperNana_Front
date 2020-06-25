@@ -53,7 +53,7 @@ class MobileContainer extends Component {
                 <Menu.Item position='left'>
                 <Link to ='/'><Icon name ='heartbeat'></Icon>Health travel</Link>
                 </Menu.Item>
-</Menu>
+              </Menu>
                
                 
                 

@@ -5,3 +5,31 @@
     margin-left: auto !important;
     margin-right: auto !important ;
 }
+.card {
+    text-align: center;
+    margin: 1em !important;
+}
+.resultCont {
+    display: block;
+    margin: auto; 
+    padding: 2em;
+}
+.bodytreat {
+    padding: 2em;
+    display : flex;
+    justify-content: center;
+    flex-flow: column nowrap;   
+    
+}
+.content {
+    padding: 1em !important;
+    text-align: center !important;
+}
+.bodytreat h2 {
+    margin: 1em;
+}
+
+.result {
+    display: flex;
+    text-align: left !important;
+}

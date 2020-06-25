@@ -5,7 +5,7 @@ import '../components/Homepage.css'
 import {Link} from 'react-router-dom'
 import traitment from '../traitement.png'
 import map from '../map.png'
-import Orion_linkedin from '../icons/Orion_linkedin.png'
+// import Orion_linkedin from '../icons/Orion_linkedin.png'
 
 
 function HomePage() {
@@ -16,9 +16,9 @@ function HomePage() {
         <img className ='logo' src={logo}/>    
   
         <div className='body'>
-          <Modal trigger={<Button className='aboutus'>About us</Button>} basic size='small'>
+          <Modal className='modale' trigger={<Button className='aboutus'>About us</Button>} basic size='small'>
               <Header content='Who are we ?' />
-              <Modal.Content>
+              <Modal.Content >
                 <p>
                   We are four women who have converted professionally 
                   and decided to take training at the Wild Code School in order 
@@ -33,8 +33,8 @@ function HomePage() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <img
-                        className="github"
+                    <img
+                        id="github"
                         src="https://www.sferalabs.cc/wp-content/uploads/github-logo-white.png"
                         alt="GitHub"
                       />
@@ -56,22 +56,26 @@ function HomePage() {
             </Modal>
 
             <br/>
-            <p>
-              This website is intended to offer you health travel destinations according to two categories:
-                <ul>Research by treatment or need</ul>
-                <ul>Research by destination</ul>
-              Click on the images below and access your preferred search mode
-            </p>
-            <br/>
+            <div className='textCont'>
+              <p>
+                This website is intended to offer you health travel destinations according to two categories:</p>
+                  
+                    <p>Research by treatment or need</p>
+                    <p>Research by destination</p>
+                 
+                <p>Click on the images below and access your preferred search mode
+              </p>
+            </div>
 
           <div className='ResearchChoice'>
             <Link to ='/searchtreatment'>
-              <Image classname='photo' src ={traitment} alt='health'size='small' /><p>Search by treatment</p>
+              <Image className='landingIcon' src ={traitment} alt='health' size='small' />
+              <p className='searchText'>Search by treatment</p>
             </Link>
 
             <Link to ='/searchdestination'>
-              <Image classname='photo' src ={map} alt='health'size='small' />
-              <p>Search by destination</p>
+              <Image className='landingIcon' src ={map} alt='health' size='small'/>
+              <p className='searchText'>Search by destination</p>
             </Link>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
-import { Card, Icon, Image, Button } from 'semantic-ui-react'
+import { Card, Container, Icon, Image, Button } from 'semantic-ui-react'
 import './ResultTraitment.css'
 import {Link } from 'react-router-dom'
 
@@ -10,42 +10,40 @@ function ResultTreatment(props) {
     const [resultTreatment, setResultTreatment] = useState([])
 
     const getData = () => {
-        Axios.get('http://localhost:3001//clinic')
-            .then(response => setResultTreatment((response.data.result)))
+        Axios.get('http://localhost:3001/clinic')
+            .then(res => setResultTreatment((res.data)))
     }
 
     useEffect(() => {
         getData()
-    }, [resultTreatment])
+    }, [])
 
    
     return (
         <>
+        <div className='bodytreat'>
             <h2>Resuts of your selection for {treatmentChoice}</h2>
-            {resultTreatment.map(e => {
+            {resultTreatment.filter( e=> e.Speciality === treatmentChoice)
+            .map(e => {
                 return (
-                    <Card>
-                        <Image src={e.name} wrapped ui={false} />
-                        <Card.Content>
-                            <Card.Header>{e.adress}</Card.Header>
+                    <Container className='center'>
+                    <Card fluid className='result'>
+                        <Card.Content fluid >
+                            <Card.Header>{e.ClinicName}</Card.Header>
                             <Card.Meta>
-                                <span className='date'>{e.name}</span>
+                                <span className='date'>{e.adress}</span>
                             </Card.Meta>
                             <Card.Description>
-                                {e.name}
+                              {e.Speciality}  <br/>
+                              {e.care_type}
                             </Card.Description>
                         </Card.Content>
-                        <Card.Content extra>
-                            <a>
-                                <Icon name='user' />
-                                22 Friends
-                            </a>
-                        </Card.Content>
                     </Card>
+                    </Container>
                 )
             })}
            <Link to='/searchtreatment'> <Button className='button'>Return to treatment Choice</Button></Link>
-        </>
+        </div> </>
 
     )
 }

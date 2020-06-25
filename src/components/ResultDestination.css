@@ -1,7 +1,39 @@
-.button{
+.buttonReturn {
     background-color: #e63946 !important;
     color : white !important;
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important ;
+}
+
+h2 {
+    padding :1em !important;
+    text-align: center;
+}
+.card {
+    text-align: center;
+    margin: 1em !important;
+}
+
+.bodytreat {
+    padding: 2em !important;
+    display : flex;
+    justify-content: center;
+    flex-flow: column nowrap;   
+    
+}
+.content {
+    padding: 1em !important;
+    text-align: center !important;
+}
+
+#resultCity {
+    display: flex;
+    text-align: left !important;
+    margin: none !important;
+    padding-top: 3% !important;
+}
+
+.resultCont {
+    padding-top: 2% !important;
 }

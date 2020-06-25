@@ -5,6 +5,7 @@ p{
 
 .logo{
     display: block;
+    margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -12,14 +13,48 @@ p{
 
 .ResearchChoice{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 5vh;
 }
 
 .aboutus{
     background-color: #e63946 !important;
+    width: 12em;
     color : white !important;
     display: block !important;
+    margin-top: 30px !important;
     margin-left: auto !important;
     margin-right: auto !important ;
-   
+    margin-bottom: 30px !important;
+}
+
+.textCont, .searchText {
+    font-weight: bolder;
+    padding: 2vh;
+}
+
+.textCont {
+    color: #5A5E6B;
+}
+
+.ui.page {
+    background-color: rgb(230,57,70,.95) !important;
+    opacity: 0.5;
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+}
+
+.landingIcon {
+    margin-bottom: 2vh;
+}
+
+#github {
+    width: 10vw;
+}
+
+.linkedin {
+    filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(286deg) brightness(105%) contrast(103%);
 }

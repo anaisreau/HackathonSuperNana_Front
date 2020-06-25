@@ -16,10 +16,10 @@ const TreatmentChoice = () => {
 
   return (
     <>
-      <Container className='cardsContainer'>
+      <Container>
 
-        <Container className='cards' >
-          <Card className='card'>
+        <Container  className='cards' >
+          <Card fluid className='card'>
             <Image src={Orion_tooth} wrapped ui={false} id='toothImg'/>
             <Card.Content className='cardContent'>
               <Card.Header  className='cardHeader'>DENTISTRY</Card.Header>
@@ -30,7 +30,7 @@ const TreatmentChoice = () => {
                 <Link className='cardsLink'
                   to={{
                     pathname: '/resulttreatment',
-                    setTreatment: 'dentistry'}}>
+                    setTreatment: 'Dentist'}}>
                   <Button className='buttonTreatment'>View results</Button>
                 </Link>
               </Card.Description>
@@ -38,7 +38,7 @@ const TreatmentChoice = () => {
           </Card>
           
 
-          <Card value='surrogacy'className='card'>
+          <Card fluid value='surrogacy'className='card'>
             <Image src={Orion_fertility} wrapped ui={false} id='procreationImg'/>
             <Card.Content className='cardContent'>
             <Card.Header name = 'surrogacy'className='cardHeader'>SURROGACY</Card.Header>
@@ -49,7 +49,7 @@ const TreatmentChoice = () => {
                 <Link
                   to={{
                     pathname: '/resulttreatment',
-                    setTreatment: 'surrogacy'
+                    setTreatment: 'Procreation'
                   }}>
                   <Button className='buttonTreatment'>View results</Button>
                 </Link>
@@ -59,7 +59,7 @@ const TreatmentChoice = () => {
         </Container>
 
         <Container className='cards'>
-          <Card className='card'>
+          <Card fluid className='card'>
             <Image src={Orion_user} wrapped ui={false} id='cosmeticImg'/>
             <Card.Content className='cardContent'>
             <Card.Header name = 'cosmetic surgery' className='cardHeader'>COSMETIC SURGERY</Card.Header>
@@ -72,7 +72,7 @@ const TreatmentChoice = () => {
                 <Link
                   to={{
                     pathname: '/resulttreatment',
-                    setTreatment: 'cosmetic surgery'
+                    setTreatment: 'Plastic Surgery'
                   }}>
                   <Button className='buttonTreatment'>View results</Button>
                 </Link>
@@ -80,7 +80,7 @@ const TreatmentChoice = () => {
             </Card.Content>
           </Card>
 
-          <Card className='card'>
+          <Card fluid className='card'>
                 <Image src={Orion_weighing} wrapped ui={false} id='weighImg'/>
                 <Card.Content className='cardContent'>
                 <Card.Header name = 'weight loss surgery' className='cardHeader'>WEIGHT LOSS SURGERY</Card.Header>
@@ -91,7 +91,7 @@ const TreatmentChoice = () => {
                     <Link
                       to={{
                         pathname: '/resulttreatment',
-                        setTreatment: 'weight loss surgery'
+                        setTreatment: 'Weight Loss'
                       }}>
                       <Button className='buttonTreatment'>View results</Button>
                     </Link>

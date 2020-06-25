@@ -2,3 +2,16 @@
     background-color : #e63946 !important; 
     color : white !important;
 }
+h1 {
+    padding :0.3em !important;
+    text-align: center;
+}
+.btnCountry {
+    width: 20em;
+    padding: 1em !important;
+    margin-bottom: 0.2em;
+}
+
+/* .segmentImg {
+    height: 15em;
+} */

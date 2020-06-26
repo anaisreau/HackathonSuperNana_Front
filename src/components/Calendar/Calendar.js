@@ -43,7 +43,7 @@ export default class Calendar extends React.Component {
 
     firstDayOfMonth = () => {
         let dateContext = this.state.dateContext;
-        let firstDay = moment(dateContext).startOf('month').format('d'); // Day of week 0...1..5...6
+        let firstDay = moment(dateContext).startOf('month').format('d'); 
         return firstDay;
     }
 
@@ -56,27 +56,27 @@ export default class Calendar extends React.Component {
         });
     }
 
-    nextMonth = () => {
-        let dateContext = Object.assign({}, this.state.dateContext);
-        dateContext = moment(dateContext).add(1, "month");
-        this.setState({
-            dateContext: dateContext
-        });
-        this.props.onNextMonth && this.props.onNextMonth();
-    }
+     nextMonth = () => {
+         let dateContext = Object.assign({}, this.state.dateContext);
+         dateContext = moment(dateContext).add(1, "month");
+         this.setState({
+             dateContext: dateContext
+         });
+         this.props.onNextMonth && this.props.onNextMonth();
+     }
 
-    prevMonth = () => {
-        let dateContext = Object.assign({}, this.state.dateContext);
-        dateContext = moment(dateContext).subtract(1, "month");
-        this.setState({
-            dateContext: dateContext
-        });
-        this.props.onPrevMonth && this.props.onPrevMonth();
-    }
+     prevMonth = () => {
+         let dateContext = Object.assign({}, this.state.dateContext);
+         dateContext = moment(dateContext).subtract(1, "month");
+         this.setState({
+             dateContext: dateContext
+         });
+         this.props.onPrevMonth && this.props.onPrevMonth();
+     }
 
     onSelectChange = (e, data) => {
         this.setMonth(data);
-        this.props.onMonthChange && this.props.onMonthChange();
+         this.props.onMonthChange && this.props.onMonthChange();
 
     }
     SelectList = (props) => {
@@ -188,7 +188,7 @@ export default class Calendar extends React.Component {
             );
         }
 
-        console.log("blanks: ", blanks);
+        // console.log("blanks: ", blanks);
 
         let daysInMonth = [];
         for (let d = 1; d <= this.daysInMonth(); d++) {

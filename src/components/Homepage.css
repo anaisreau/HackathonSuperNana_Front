@@ -55,6 +55,7 @@ p{
     width: 10vw;
 }
 
-.linkedin {
+#linkedin {
     filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(286deg) brightness(105%) contrast(103%);
+    width: 10vw;
 }

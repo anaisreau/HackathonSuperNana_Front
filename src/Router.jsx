@@ -6,6 +6,9 @@ import SearchDestination from './components/SearchDestination'
 import ResultTreatment from './components/ResultTreatment'
 import ResultDestination from './components/ResultDestination'
 import TreatmentChoice from './components/TreatmentChoice';
+import Login from './components/Login'
+import Register from './components/Register'
+import Profile from './components/Profile'
 
 
 function Router() {
@@ -20,6 +23,9 @@ function Router() {
                 <Route path='/searchdestination' component={SearchDestination} />
                 <Route path='/resulttreatment' component={ResultTreatment} />
                 <Route path='/resultdestination' component={ResultDestination} />
+                <Route exact path="/register" component={Register} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/profile" component={Profile} />
             </Switch>
          </ResponsiveContainer>
          

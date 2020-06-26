@@ -1,3 +1,6 @@
+.searchDest_page {
+    margin-bottom: 1em;
+}
 .submit{
     background-color : #e63946 !important; 
     color : white !important;
@@ -11,7 +14,14 @@ h1 {
     padding: 1em !important;
     margin-bottom: 0.2em;
 }
+.imgDiv {
+    width: 100%;
+    
+}
+.cityImg {
+    width: 28em;
+    border-image-width: 1em;
+    block-size: inherit;
+    object-fit: cover;
 
-/* .segmentImg {
-    height: 15em;
-} */
+}

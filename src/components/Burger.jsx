@@ -43,8 +43,6 @@ class MobileContainer extends Component {
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
-          
-         
               <Menu className='nav' inverted>
                 <Menu.Item onClick={this.handleToggle}className='nav'>
                   <Icon name='sidebar' />
@@ -54,13 +52,6 @@ class MobileContainer extends Component {
                 <Link to ='/' className='navLink' ><Icon name ='heartbeat' className='navIcon'></Icon>Health travel</Link>
                 </Menu.Item>
               </Menu>
-               
-                
-                
-                 
-              
-           
-          
           {children}
         </Sidebar.Pusher>
       </Responsive>

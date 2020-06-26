@@ -14,7 +14,7 @@ function Blog () {
         const getData = () => {
         
             Axios
-            .get(`https://newsapi.org/v2/top-headlines?country=fr&category=health&apiKey=${apiKey}`)
+            .get(`https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=${apiKey}`)
             .then(response => setArticleNews(response.data.articles))
             
         }
@@ -26,12 +26,12 @@ useEffect(() => {
     return (
         <>
         <div className='blog_page'>
-            <h2>News from Health</h2>
+            <h2 className='blogTitle'>News from Health</h2>
             
             {articleNews.filter(e =>e.source).map(e => { 
                 return (
                     <div>
-                    <Card className='blogCard'>
+                    <Card fluid className='blogCard'>
                         <Image src={e.urlToImage} wrapped ui={false} />
                         <Card.Content center header={e.title} />
                         <Card.Content description={e.description} />

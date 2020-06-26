@@ -30,11 +30,11 @@ function ResultTreatment(props) {
                         <Card fluid className='result'>
                             <Card.Content  >
                                 <Card.Header className='resTttHeader'>{e.ClinicName}</Card.Header>
-                                <Card.Meta id="tttAdress">
+                                <Card.Meta className='tttAdress'>
                                     <span>{e.adress}</span>
                                     <div>{e.city}</div>
                                 </Card.Meta>
-                                <Card.Description>
+                                <Card.Description className='tttDesc'>
                                 {e.Speciality}  <br/>
                                 {e.care_type}
                                 </Card.Description>

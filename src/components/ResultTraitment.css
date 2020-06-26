@@ -42,12 +42,17 @@
 
 .resTttTitle {
     color: #1E3557;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     margin-right: 2vw;
     margin-left: 2vw;
 }
 
-#tttAddress {
-    margin-top: 2vh;
+.tttAddress {
+    margin-top: 3vh !important;
     font-size: 2vh !important;
+}
+
+.tttDesc {
+    font-size: 2vh;
+    margin-top: 2vh;
 }

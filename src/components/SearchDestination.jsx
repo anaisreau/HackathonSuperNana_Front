@@ -52,15 +52,14 @@ function SearchDestination() {
             .then(response => setCity(response.data))
     }
 
-
-
     useEffect(() => {
         getdata()
     }, [])
     console.log(country)
+
     return (
         <div className="searchDest_page">
-            <h1>Search by destination</h1>
+            <h1 className='searchDest'>Search by destination</h1>
             
             <Link
                   to={{
@@ -106,7 +105,7 @@ function SearchDestination() {
              <Link
                   to={{
                     pathname: '/resultdestination',
-                    setCountry: 'Thailand'
+                    setCountry: 'Thailande'
                   }}>
                     <div className="imgDiv">
                     <img src={bangkok} alt='istanbul city' className='cityImg'/>

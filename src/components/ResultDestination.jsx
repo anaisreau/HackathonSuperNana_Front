@@ -19,26 +19,25 @@ function ResultDestination(props) {
     }, [])
     return (
         <>
-            <h2>Results of your selection for {destinationChoice}</h2>
+            <h2 className="destResTitle">Results of your selection for {destinationChoice}</h2>
             {resultDestination.filter(e => e.country === destinationChoice)
                 .map(e => {
                     return (
                         <Container className='resultCont'>
                             <Card fluid id='resultCity'>
                                 <Card.Content fluid >
-                                    <Card.Header>{e.name}</Card.Header>
-                                    <Card.Meta>
+                                    <Card.Header id='resDestHeader'>{e.name}</Card.Header>
+                                    <Card.Meta className='destAddress'>
                                         <span className='date'>{e.adress}</span>
                                         <div className='date'>{e.city}</div>
                                     </Card.Meta>
-                                    <Card.Description>
+                                    <Card.Description className='destDesc'>
                                         {e.Speciality}  <br />
                                         {e.care_type}
                                     </Card.Description>
                                 </Card.Content>
-                                <Card.Content extra>
 
-                                </Card.Content>
+                                
                                 <Calendar width='25%'/>
                             </Card>
                         </Container>

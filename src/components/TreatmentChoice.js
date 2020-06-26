@@ -18,7 +18,7 @@ const TreatmentChoice = () => {
     <>
       <Container>
 
-        <Container  className='cards' >
+        <Container  id='cards' >
           <Card fluid className='card'>
             <Image src={Orion_tooth} wrapped ui={false} id='toothImg'/>
             <Card.Content className='cardContent'>

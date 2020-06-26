@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import jwt_decode from 'jwt-decode'
-
+import './Homepage.css'
 const Profile = () => {
 
     // const [first_name, setFirstName] = useState('')
@@ -38,7 +38,7 @@ const Profile = () => {
     }
 
     return (
-        <div className="container">
+        <div className="containerProfil">
             <div className="jumbotron mt-5">
                 <div className="col-sm-8 mx-auto">
                     <h1 className="text-center">PROFILE</h1>

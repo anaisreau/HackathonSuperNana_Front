@@ -19,15 +19,15 @@ function RouterApp() {
           <ResponsiveContainer>
                 
             <Switch>
-                <Route exact path='/' component={HomePage} />
+                <Route exact path='/home' component={HomePage} />
                 <Route path='/searchtreatment' component={TreatmentChoice} />
                 <Route path='/searchdestination' component={SearchDestination} />
                 <Route path='/resulttreatment' component={ResultTreatment} />
                 <Route path='/resultdestination' component={ResultDestination} />
                 <Route path='/blog' component={Blog} />
-                <Route exact path="/register" component={Register} />
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/profile" component={Profile} />
+                <Route exact path="/users/register" component={Register} />
+                <Route exact path="/users/login" component={Login} />
+                <Route exact path="/users/profile" component={Profile} />
             </Switch>
             
          </ResponsiveContainer>

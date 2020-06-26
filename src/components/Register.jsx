@@ -24,7 +24,7 @@ let history = useHistory()
     }
 
     register(newUser).then(res => {
-      history.push(`/login`)
+      history.push(`/users/login`)
     })
     .then (alert('Registered'))
   }

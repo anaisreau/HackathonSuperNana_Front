@@ -106,7 +106,7 @@ function SearchDestination() {
              <Link
                   to={{
                     pathname: '/resultdestination',
-                    setCountry: 'Thailand'
+                    setCountry: 'Thailande'
                   }}>
                     <div className="imgDiv">
                     <img src={bangkok} alt='istanbul city' className='cityImg'/>

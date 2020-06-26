@@ -6,6 +6,7 @@ import SearchDestination from './components/SearchDestination'
 import ResultTreatment from './components/ResultTreatment'
 import ResultDestination from './components/ResultDestination'
 import TreatmentChoice from './components/TreatmentChoice';
+import Blog from './components/Blog'
 
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
                 <Route path='/searchdestination' component={SearchDestination} />
                 <Route path='/resulttreatment' component={ResultTreatment} />
                 <Route path='/resultdestination' component={ResultDestination} />
+                <Route path='/blog' component={Blog} />
             </Switch>
          </ResponsiveContainer>
          

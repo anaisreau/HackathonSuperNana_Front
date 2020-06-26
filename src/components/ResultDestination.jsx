@@ -3,6 +3,7 @@ import { Card, Icon, Image, Button, Container } from 'semantic-ui-react'
 import './ResultDestination.css'
 import { Link } from 'react-router-dom'
 import Axios from 'axios'
+import Calendar from './Calendar/Calendar'
 
 function ResultDestination(props) {
     const destinationChoice = props.location.setCountry
@@ -38,6 +39,7 @@ function ResultDestination(props) {
                                 <Card.Content extra>
 
                                 </Card.Content>
+                                <Calendar width='25%'/>
                             </Card>
                         </Container>
                     )

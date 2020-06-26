@@ -33,6 +33,7 @@
     text-align: left !important;
     margin: none !important;
     padding-top: 3% !important;
+    padding-bottom: 2vh !important;
 }
 
 .resultCont {
@@ -68,6 +69,8 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
 #resDestHeader {
     font-size: 4vw;
     color: #e63946 !important;
@@ -75,10 +78,10 @@
 
 .destAddress {
     margin-top: 2vh;
-    font-size: 2vh !important;
+    font-size: 3vw !important;
 }
 
 .destDesc {
-    font-size: 2vh;
+    font-size: 3.5vw;
     margin-top: 2vh;
 }

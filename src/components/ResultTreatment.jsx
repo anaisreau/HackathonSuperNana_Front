@@ -29,7 +29,7 @@ function ResultTreatment(props) {
                 return (
                     <Container className='center'>
                         <Card fluid className='result'>
-                            <Card.Content  >
+                            <Card.Content className='resTttContent' >
                                 <Card.Header className='resTttHeader'>{e.ClinicName}</Card.Header>
                                 <Card.Meta className='tttAdress'>
                                     <span>{e.adress}</span>
@@ -40,7 +40,7 @@ function ResultTreatment(props) {
                                 {e.care_type}
                                 </Card.Description>
                             </Card.Content>
-                            <Calendar width='25%'/>
+                            <Calendar className='calendar' />
                         </Card>
                     </Container>
                 )

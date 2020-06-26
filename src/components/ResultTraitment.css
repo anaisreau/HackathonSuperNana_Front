@@ -33,11 +33,35 @@
 .result {
     display: flex;
     text-align: left !important;
-    padding-bottom: 7% !important;
+    padding-bottom: 3vh !important;
 }
 
+.resTttContent {
+  margin-bottom: 5%;
+}
 
+.resTttHeader {
+  color: #e63946 !important;
+  font-size: 4vw !important;
+}
 
+.resTttTitle {
+  color: #1E3557;
+  font-size: 4vw;
+  margin-bottom: 4vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.tttAddress {
+  margin-top: 3vh !important;
+  font-size: 2vh !important;
+}
+
+.tttDesc {
+  font-size: 2vh;
+  margin-top: 2vh;
+}
 
 /* Calendar */
 
@@ -64,31 +88,14 @@
   .App-intro {
     font-size: large;
   }
+
+  .calendar-container {
+    width: 50vw !important;
+  }
   
   @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
   }
-}
 
-.resTttHeader {
-    color: #e63946 !important;
-    font-size: 4vw !important;
-}
 
-.resTttTitle {
-    color: #1E3557;
-    margin-bottom: 4vh;
-    margin-right: 2vw;
-    margin-left: 2vw;
-}
-
-.tttAddress {
-    margin-top: 3vh !important;
-    font-size: 2vh !important;
-}
-
-.tttDesc {
-    font-size: 2vh;
-    margin-top: 2vh;
-}

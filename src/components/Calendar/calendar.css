@@ -20,7 +20,7 @@ tr {
 
 .calendar-header {
     border-bottom: 1px dashed #1D3557;
-    font-size: 1.2em;
+    font-size: 3em;
 }
 
 .calendar-header td {
@@ -36,18 +36,18 @@ tr {
 }
 
 .week-day {
-    font-size: 0.4em;
+    font-size: 0.9em;
 }
 
 .day {
-    font-size: 0.4em;
+    font-size: 1em;
 }
 
 .day {
     cursor: pointer;
     width: 15px;
     height: 15px;
-    line-height: 15px;
+    line-height: 2vh;
 }
 
 .current-day {
@@ -55,7 +55,7 @@ tr {
     opacity: 0.8;
     width: 15px;
     height: 15px;
-    line-height: 15px;
+    line-height: 2vh;
     border-radius: 2%;
     color: white;
 }
@@ -63,7 +63,7 @@ tr {
     background-color:  #1D3557;
     width: 15px;
     height: 15px;
-    line-height: 15px;
+    line-height: 2vh;
     border-radius: 2%;
     color: white;
 }

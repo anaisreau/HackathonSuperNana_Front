@@ -150,12 +150,12 @@ function HomePage() {
 
             <div className='ResearchChoice'>
               <Link to ='/searchtreatment'>
-                <Image id='landingIcon1' src ={traitment} alt='health' size='small' />
+                <Image centered id='landingIcon1' src ={traitment} alt='health' size='tiny'/>
                 <p className='searchText'>Search by treatment</p>
               </Link>
 
               <Link to ='/searchdestination'>
-                <Image id='landingIcon2' src ={map} alt='health' size='small'/>
+                <Image centered id='landingIcon2' src ={map} alt='health' size='tiny' />
                 <p className='searchText'>Search by destination</p>
               </Link>
             </div>

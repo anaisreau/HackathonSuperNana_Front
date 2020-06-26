@@ -1,20 +1,20 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import HomePage from './components/HomePage'
-import ResponsiveContainer from './components/Burger'
-import SearchDestination from './components/SearchDestination'
-import ResultTreatment from './components/ResultTreatment'
-import ResultDestination from './components/ResultDestination'
-import TreatmentChoice from './components/TreatmentChoice';
-import Blog from './components/Blog'
+import React, { lazy } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+const HomePage = lazy (() => import('./components/HomePage'))
+const ResponsiveContainer = lazy (() => import('./components/Burger'))
+const SearchDestination = lazy(()=> import ('./components/SearchDestination'))
+const ResultTreatment = lazy(() => import('./components/ResultTreatment'))
+const ResultDestination = lazy(() => import('./components/ResultDestination')) 
+const TreatmentChoice = lazy(() => import('./components/TreatmentChoice')) 
+const Blog = lazy(() => import('./components/Blog'))
 
-
-function Router() {
+function RouterApp() {
    
     return (
         <div>
             
           <ResponsiveContainer>
+                
             <Switch>
                 <Route exact path='/' component={HomePage} />
                 <Route path='/searchtreatment' component={TreatmentChoice} />
@@ -23,10 +23,13 @@ function Router() {
                 <Route path='/resultdestination' component={ResultDestination} />
                 <Route path='/blog' component={Blog} />
             </Switch>
+            
          </ResponsiveContainer>
+        
+
          
           </div>
     )
 }
 
-export default Router
+export default RouterApp

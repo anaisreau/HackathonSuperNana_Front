@@ -13,7 +13,7 @@ function HomePage() {
 
   return (
       <>
-        <img className ='logo' src={logo}/>    
+        <img className ='logo' src={logo} alt="logo health travel app"/>    
   
         <div className='bodyPres'>
           <Modal className='modale' trigger={<Button className='aboutus'>About us</Button>} basic size='small'>

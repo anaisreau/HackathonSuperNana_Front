@@ -8,33 +8,36 @@ p{
     margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 50vw;
 }
 
 .ResearchChoice{
     display: flex;
     justify-content: space-around;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 .aboutus{
     background-color: #e63946 !important;
-    width: 12em;
+    width: 35vw;
+    height: auto;
     color : white !important;
+    font-size: 3vw !important;
     display: block !important;
-    margin-top: 30px !important;
+    margin-top: 4vh !important;
     margin-left: auto !important;
     margin-right: auto !important ;
-    margin-bottom: 30px !important;
+    margin-bottom: 2vh !important;
 }
 
 .textCont, .searchText {
     font-weight: bolder;
-    padding: 2vh;
+    font-size: 3vw;
 }
 
 .textCont {
-    color: #5A5E6B;
+    color: #1E3557;
+    padding: 5vw;
 }
 
 .ui.page {
@@ -42,19 +45,26 @@ p{
     opacity: 0.5;
 }
 
-.list {
-    list-style: none;
-    text-align: center;
-}
-
 .landingIcon {
     margin-bottom: 2vh;
 }
 
-#github {
-    width: 10vw;
+.contactFiles {
+    display: flex;
+    flex-flow: row;   
+    justify-content: center;
 }
 
-.linkedin {
-    filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(286deg) brightness(105%) contrast(103%);
+.nameDiv {
+    margin-top: 4vh;
+}
+
+.contactData {
+    margin-top: 4vh;
+    margin-right: 7vw;
+    margin-left: 7vw;
+}
+
+.textPres {
+    padding: 2vw;
 }

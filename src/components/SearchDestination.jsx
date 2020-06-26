@@ -52,15 +52,14 @@ function SearchDestination() {
             .then(response => setCity(response.data))
     }
 
-
-
     useEffect(() => {
         getdata()
     }, [])
     console.log(country)
+
     return (
         <div className="searchDest_page">
-            <h1>Search by destination</h1>
+            <h1 className='searchDest'>Search by destination</h1>
             
             <Link
                   to={{

@@ -5,9 +5,10 @@
     background-color : #e63946 !important; 
     color : white !important;
 }
-h1 {
+.searchDest {
     padding :0.3em !important;
     text-align: center;
+    color: #1E3557;
 }
 .btnCountry {
     width: 20em;
@@ -23,5 +24,4 @@ h1 {
     border-image-width: 1em;
     block-size: inherit;
     object-fit: cover;
-
 }

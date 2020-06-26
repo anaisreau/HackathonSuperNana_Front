@@ -1,6 +1,6 @@
 .nav {
     background:#1d3557 !important;
-    font-size: 2vw !important;
+    font-size: 1.2em !important;
 }
 
 .navLink {
@@ -9,4 +9,8 @@
 
 .navIcon {
     width: 2vw;
+}
+
+.logBtn {
+    background-color: #e63946 !important;
 }

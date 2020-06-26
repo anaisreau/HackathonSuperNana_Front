@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { register } from '../components/UserFonctions'
 import {useHistory} from 'react-router-dom'
 import { Form, Input, TextArea, Button, Select } from 'semantic-ui-react'
-
+import './Homepage.css'
 const  Register = () => {
 
 const [firstName, setFirstName] = useState('')
@@ -26,29 +26,36 @@ let history = useHistory()
     register(newUser).then(res => {
       history.push(`/login`)
     })
+    .then (alert('Registered'))
   }
 
     return (
+      <div className='register_page'>
         <Form onSubmit={createUser}>
     <Form.Field>
-      <label>First Name</label>
+      <label style = 'center'>First Name</label>
       <input placeholder='First Name' value={firstName}
             onChange={(e) => setFirstName(e.target.value)} />
     </Form.Field>
     <Form.Field>
-      <label>Last Name</label>
+      <label style = 'center'>Last Name</label>
       <input placeholder='Last Name'value={lastName}
             onChange={(e) => setLastName(e.target.value)} />
     </Form.Field>
     <Form.Field>
-    <label>Last Name</label>
+    <label style = 'center'>Email</label>
       <input value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder='joe@schmoe.com'/>
     </Form.Field>
+    <Form.Field>
+      <label style = 'center'>Password</label>
+      <input type='password' placeholder='Password'value={password}
+            onChange={(e) => setPassword(e.target.value)} />
+    </Form.Field>
     <Button type='submit'>Submit</Button>
   </Form>
-
+  </div>
     )
   }
 

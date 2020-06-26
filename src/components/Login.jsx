@@ -28,6 +28,7 @@ const Login = () => {
     }
 
     return(
+      <div className='login_page'>
       <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='top'>
  <Grid.Column style={{ maxWidth: 450 }}>
   <Header as='h2' color='teal' textAlign='center'>
@@ -64,6 +65,7 @@ const Login = () => {
           </Message>
           </Grid.Column>
           </Grid>
+          </div>
               )}
               
 export default Login

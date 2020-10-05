@@ -59,8 +59,8 @@
 }
 
 .tttDesc {
-  font-size: 2vh;
-  margin-top: 2vh;
+  font-size: 2vh !important;
+  margin-top: 3vh !important;
 }
 
 /* Calendar */

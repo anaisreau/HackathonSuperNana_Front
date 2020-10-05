@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {login} from '../components/UserFonctions'
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 import {Link, useHistory } from 'react-router-dom'
-
+import './Homepage.css'
 const Login = () => {
 
     const [email, setEmail] = useState('')
@@ -21,13 +21,14 @@ const Login = () => {
         
         login(user).then(res => {
             if(res) {
-                history.push('/profile')
+                history.push('/users/profile')
             }
         })
 
     }
 
     return(
+      <div className='login_page'>
       <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='top'>
  <Grid.Column style={{ maxWidth: 450 }}>
   <Header as='h2' color='teal' textAlign='center'>
@@ -59,11 +60,13 @@ const Login = () => {
           <Button color='teal' fluid size='large' type='submit'>Login</Button>
           </Segment>
           </Form>
-          <Message>New to us? <Link to ='/register'>
+          <Message>New to us? 
+            <Link to ='/users/register'>
             <a>Sign Up</a></Link>
           </Message>
           </Grid.Column>
           </Grid>
+          </div>
               )}
               
 export default Login

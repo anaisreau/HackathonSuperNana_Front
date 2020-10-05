@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { Button, Card, Container, Image } from 'semantic-ui-react'
 import './TreatmentChoice.css';
 import Orion_tooth from '../icons/Orion_tooth.png'
@@ -18,7 +18,7 @@ const TreatmentChoice = () => {
     <>
       <Container>
 
-        <Container  className='cards' >
+        <Container  id='cards' >
           <Card fluid className='card'>
             <Image src={Orion_tooth} wrapped ui={false} id='toothImg'/>
             <Card.Content className='cardContent'>

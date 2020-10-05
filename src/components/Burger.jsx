@@ -36,11 +36,11 @@ class MobileContainer extends Component {
         vertical
         visible={sidebarOpened}
       >
-          <Menu.Item as='a'><Link to ='/' onClick={this.handleSidebarHide}><Icon name ='home'></Icon>Home Page</Link></Menu.Item>
+          <Menu.Item as='a'><Link to ='/home' onClick={this.handleSidebarHide}><Icon name ='home'></Icon>Home Page</Link></Menu.Item>
           <Menu.Item as='a'><Link to ='/searchTreatment'onClick={this.handleSidebarHide}><Icon name ='treatment'></Icon>Search by Treatment</Link></Menu.Item>
           <Menu.Item as='a'><Link to ='/searchDestination'onClick={this.handleSidebarHide}><Icon name ='plane'></Icon> Search by Destination</Link></Menu.Item>
           <Menu.Item as='a'><Link to ='/blog'onClick={this.handleSidebarHide}><Icon name ='newspaper outline'></Icon> Health Blog</Link></Menu.Item>
-          <Menu.Item as='a'><Link to ='/login'onClick={this.handleSidebarHide}><Icon name ='user circle outline'></Icon> Login</Link></Menu.Item>
+          <Menu.Item as='a'><Link to ='/users/login'onClick={this.handleSidebarHide}><Icon name ='user circle outline'></Icon> Login</Link></Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -50,12 +50,12 @@ class MobileContainer extends Component {
                 </Menu.Item>
 
                 <Menu.Item position='left'>
-                <Link to ='/' className='navLink' ><Icon name ='heartbeat' className='navIcon'></Icon>Health travel</Link>
+                <Link to ='/home' className='navLink' ><Icon name ='heartbeat' className='navIcon'></Icon>Health travel</Link>
                 </Menu.Item>
 
                 
     <Menu.Item position='right'>
-    <Link to ='/login' className='navLink' > <Button>Log-in</Button></Link>
+    <Link to ='/users/login'  > <Button className='logBtn'>Log-in</Button></Link>
     </Menu.Item>
   
               </Menu>

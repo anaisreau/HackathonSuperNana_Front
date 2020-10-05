@@ -22,23 +22,24 @@ function ResultTreatment(props) {
     return (
         <>
         <div className='bodytreat'>
-            <h2>Resuts of your selection for {treatmentChoice}</h2>
+            <h2 className='resTttTitle'>Results of your selection for {treatmentChoice}</h2>
             {resultTreatment.filter( e=> e.Speciality === treatmentChoice)
             .map(e => {
                 return (
                     <Container className='center'>
-                    <Card fluid className='result'>
-                        <Card.Content fluid >
-                            <Card.Header>{e.ClinicName}</Card.Header>
-                            <Card.Meta>
-                                <span className='date'>{e.adress}</span>
-                            </Card.Meta>
-                            <Card.Description>
-                              {e.Speciality}  <br/>
-                              {e.care_type}
-                            </Card.Description>
-                        </Card.Content>
-                    </Card>
+                        <Card fluid className='result'>
+                            <Card.Content  >
+                                <Card.Header className='resTttHeader'>{e.ClinicName}</Card.Header>
+                                <Card.Meta id="tttAdress">
+                                    <span>{e.adress}</span>
+                                    <div>{e.city}</div>
+                                </Card.Meta>
+                                <Card.Description>
+                                {e.Speciality}  <br/>
+                                {e.care_type}
+                                </Card.Description>
+                            </Card.Content>
+                        </Card>
                     </Container>
                 )
             })}

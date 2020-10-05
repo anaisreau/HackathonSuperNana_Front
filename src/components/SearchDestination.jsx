@@ -4,27 +4,33 @@ import './SearchDestination.css'
 import Axios from 'axios'
 import {Link} from 'react-router-dom'
 import { Divider } from "semantic-ui-react";
-import { CarouselProvider, Image, Slide, Slider, Dot } from "pure-react-carousel";
-import PropTypes from "prop-types";
-import "pure-react-carousel/dist/react-carousel.es.css";
+import bangkok from './imagesBackgound/bangkok.jpeg'
+import budapest from './imagesBackgound/budapest.jpeg'
+import cyprus from './imagesBackgound/cyprus.jpeg'
+import frankfurt from './imagesBackgound/frankfurt.jpeg'
+import istanbul from './imagesBackgound/istanbul.jpeg'
+import krakow from './imagesBackgound/krakow.jpeg'
+// import { CarouselProvider, Image, Slide, Slider, Dot } from "pure-react-carousel";
+// import PropTypes from "prop-types";
+// import "pure-react-carousel/dist/react-carousel.es.css";
 
-const CustomDotGroup = ({ slides, size }) => (
-    <Container textAlign="center">
-      <Button.Group size={size}>
-        {[...Array(slides).keys()].map(slide => (
-          <Button as={Dot} key={slide} icon="circle" slide={slide} />
-        ))}
-      </Button.Group>
-    </Container>
-  );
-  CustomDotGroup.defaultProps = {
-    size: "mini"
-  };
+// const CustomDotGroup = ({ slides, size }) => (
+//     <Container textAlign="center">
+//       <Button.Group size={size}>
+//         {[...Array(slides).keys()].map(slide => (
+//           <Button as={Dot} key={slide} icon="circle" slide={slide} />
+//         ))}
+//       </Button.Group>
+//     </Container>
+//   );
+//   CustomDotGroup.defaultProps = {
+//     size: "mini"
+//   };
   
-  CustomDotGroup.propTypes = {
-    slides: PropTypes.number.isRequired,
-    size: PropTypes.string
-  };
+//   CustomDotGroup.propTypes = {
+//     slides: PropTypes.number.isRequired,
+//     size: PropTypes.string
+//   };
   
 
 function SearchDestination() {
@@ -46,45 +52,77 @@ function SearchDestination() {
             .then(response => setCity(response.data))
     }
 
-
-
     useEffect(() => {
         getdata()
     }, [])
     console.log(country)
+
     return (
-        <>
-            <h1>Search by destination</h1>
+        <div className="searchDest_page">
+            <h1 className='searchDest'>Search by destination</h1>
+            
             <Link
                   to={{
                     pathname: '/resultdestination',
                     setCountry: 'Turquie'
-                  }}><Button className='btnCountry'>Turkey</Button></Link><br/>
+                  }}>
+                  <div className="imgDiv">
+                  <img src={istanbul} alt='istanbul city' className='cityImg'/>
+                  <Button className='btnCountry'>Turkey</Button>
+                  </div>
+                  </Link>
+                  <br/>
             <Link
                   to={{
                     pathname: '/resultdestination',
                     setCountry: 'Allemagne'
-                  }}><Button className='btnCountry'>Germany</Button></Link><br/>
+                  }}>
+                    <div className="imgDiv">
+                    <img src={frankfurt} alt='istanbul city' className='cityImg'/>
+                    <Button className='btnCountry'>Germany</Button>
+                    </div>
+                    </Link><br/>
              <Link
                   to={{
                     pathname: '/resultdestination',
                     setCountry: 'Chypre'
-                  }}><Button className='btnCountry'>Cyprus</Button></Link><br/>
+                  }}>
+                    <div className="imgDiv">
+                    <img src={cyprus} alt='istanbul city' className='cityImg'/>
+                    <Button className='btnCountry'>Cyprus</Button>
+                    </div>
+                    </Link><br/>
             <Link
                   to={{
                     pathname: '/resultdestination',
                     setCountry: 'Hongrie'
-                  }}> <Button className='btnCountry'>Hungary</Button></Link><br/>
+                  }}>
+                    <div className="imgDiv">
+                    <img src={budapest} alt='istanbul city' className='cityImg'/>
+                    <Button className='btnCountry'>Hungary</Button>
+                    </div>
+                    </Link><br/>
              <Link
                   to={{
                     pathname: '/resultdestination',
                     setCountry: 'Thailande'
-                  }}><Button className='btnCountry'>Thailand</Button></Link><br/>
+                  }}>
+                    <div className="imgDiv">
+                    <img src={bangkok} alt='istanbul city' className='cityImg'/>
+                    <Button className='btnCountry'>Thailand</Button>
+                    </div>
+                    </Link><br/>
              <Link
                   to={{
                     pathname: '/resultdestination',
                     setCountry: 'Pologne'
-                  }}><Button className='btnCountry'>Poland</Button></Link>
+                  }}>
+                    <div className="imgDiv">
+                    <img src={krakow} alt='istanbul city' className='cityImg'/>
+                    <Button className='btnCountry'>Poland</Button>
+                    </div>
+                    </Link>
+{/*                    
                    <Segment id="segmentImg" attached="bottom">
                   <CarouselProvider
     naturalSlideWidth={1}
@@ -105,7 +143,7 @@ function SearchDestination() {
 
     <Divider />
     <CustomDotGroup slides={3} />
-  </CarouselProvider></Segment>
+  </CarouselProvider></Segment> */}
 
 
             {/* <form onSubmit={resultDestination.map(e => {
@@ -134,7 +172,7 @@ function SearchDestination() {
             
 
 
-        </>
+        </div>
 
     )
 }

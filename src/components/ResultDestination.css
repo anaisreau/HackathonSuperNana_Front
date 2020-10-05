@@ -6,9 +6,10 @@
     margin-right: auto !important ;
 }
 
-h2 {
+.destResTitle {
     padding :1em !important;
     text-align: center;
+    color: #1E3557;
 }
 .card {
     text-align: center;
@@ -36,4 +37,19 @@ h2 {
 
 .resultCont {
     padding-top: 2% !important;
+}
+
+#resDestHeader {
+    font-size: 4vw;
+    color: #e63946 !important;
+}
+
+.destAddress {
+    margin-top: 2vh;
+    font-size: 2vh !important;
+}
+
+.destDesc {
+    font-size: 2vh;
+    margin-top: 2vh;
 }

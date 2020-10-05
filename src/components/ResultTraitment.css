@@ -25,11 +25,29 @@
     padding: 1em !important;
     text-align: center !important;
 }
-.bodytreat h2 {
+.bodytreat, .resTttTitle {
     margin: 1em;
+    text-align: center;
 }
 
 .result {
     display: flex;
     text-align: left !important;
+}
+
+.resTttHeader {
+    color: #e63946 !important;
+    font-size: 4vw !important;
+}
+
+.resTttTitle {
+    color: #1E3557;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#tttAddress {
+    margin-top: 2vh;
+    font-size: 2vh !important;
 }

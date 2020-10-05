@@ -10,7 +10,8 @@
 .card, ui container cards{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin: auto !important;
+    margin-bottom: 2vh !important;
 }
 
 .cardContent {
@@ -44,13 +45,4 @@
     color: white !important;
     font-size: 3vw !important;
     margin-top: 10px !important;
-}
-
-.github {
-    width: 30%;
-}
-
-.linkedIn {
-    width: 30%;
-    background: white;
 }

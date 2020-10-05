@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './App.css';
-import Router from './Router'
+import RouterApp from './Router'
 
 
-function App() {
-  return (
+const App = () => (
+  
     <div className="App">
-     < Router />
+      <Suspense fallback={<div>Loading...</div>}>
+        < RouterApp />
+     </Suspense>
     </div>
    
-  );
-}
+)
 
 export default App;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import { Button, Card, Container, Image } from 'semantic-ui-react'
 import './TreatmentChoice.css';
 import Orion_tooth from '../icons/Orion_tooth.png'
@@ -8,11 +8,7 @@ import Orion_weighing from '../icons/Orion_weighing.png'
 import { Link } from 'react-router-dom'
 
 const TreatmentChoice = () => {
-  const [treatment, setTreatment]=useState('')
-
-  const handleClick = (e) => {
-    setTreatment(e.target.value)
-  }
+ 
 
   return (
     <>

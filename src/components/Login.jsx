@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {login} from '../components/UserFonctions'
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Button, Form, Grid, Header, Message, Segment } from 'semantic-ui-react'
 import {Link, useHistory } from 'react-router-dom'
 
 const Login = () => {

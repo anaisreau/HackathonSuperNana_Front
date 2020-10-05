@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Card, Icon, Image, Button, Container } from 'semantic-ui-react'
+import { Card, Button, Container } from 'semantic-ui-react'
 import './ResultDestination.css'
 import { Link } from 'react-router-dom'
 import Axios from 'axios'

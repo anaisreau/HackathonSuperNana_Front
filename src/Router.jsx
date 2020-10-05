@@ -2,7 +2,7 @@ import Login from './components/Login'
 import Register from './components/Register'
 import Profile from './components/Profile'
 import React, { lazy } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 
 const HomePage = lazy (() => import('./components/HomePage'))

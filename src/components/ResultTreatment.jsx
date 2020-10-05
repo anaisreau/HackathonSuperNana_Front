@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
-import { Card, Container, Icon, Image, Button } from 'semantic-ui-react'
+import { Card, Container, Button } from 'semantic-ui-react'
 import './ResultTraitment.css'
 import {Link } from 'react-router-dom'
 

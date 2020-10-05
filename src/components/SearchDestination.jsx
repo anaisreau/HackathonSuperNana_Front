@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Container,Segment } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 import './SearchDestination.css'
 import Axios from 'axios'
 import {Link} from 'react-router-dom'
-import { Divider } from "semantic-ui-react";
 import bangkok from './imagesBackgound/bangkok.jpeg'
 import budapest from './imagesBackgound/budapest.jpeg'
 import cyprus from './imagesBackgound/cyprus.jpeg'
@@ -36,8 +35,7 @@ import krakow from './imagesBackgound/krakow.jpeg'
 function SearchDestination() {
 
     const [country, setCountry] = useState('')
-    const [countrySelected, setCountrySelected] = useState('')
-    const [resultDestination, setResultDestination] = useState('')
+
 
     const [city, setCity] = useState('')
 
@@ -47,10 +45,10 @@ function SearchDestination() {
             .then(res => setCountry(res.data))
     }
 
-    function getCity() {
-        Axios.get('http://localhost:3001/Clinic/city')
-            .then(response => setCity(response.data))
-    }
+    // function getCity() {
+    //     Axios.get('http://localhost:3001/Clinic/city')
+    //         .then(response => setCity(response.data))
+    // }
 
     useEffect(() => {
         getdata()

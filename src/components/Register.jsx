@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { register } from '../components/UserFonctions'
 import {useHistory} from 'react-router-dom'
-import { Form, Input, TextArea, Button, Select } from 'semantic-ui-react'
+import { Form, Button} from 'semantic-ui-react'
 
 const  Register = () => {
 

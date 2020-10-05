@@ -15,7 +15,7 @@ function Blog () {
         
             Axios
             .get(`https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=${apiKey}`)
-            .then(response => setArticleNews(response.data.articles))
+            .then(response => console.log(response.data.articles))
             
         }
 useEffect(() => {

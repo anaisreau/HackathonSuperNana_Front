@@ -11,7 +11,9 @@ const images = [
   ];
 
 
-  
+const attibutes = [
+    'image1', 'image2', 'image3', 'image4'
+]  
 
 
   const Slideshow = () => {
@@ -19,7 +21,7 @@ const images = [
       <div className="slide-container">
         <Zoom scale={0.4}>
           {
-            images.map((each, index) => <img key={index} style={{width: "100%"}} src={each} alt='image'/>)
+            images.map((each, index) => <img key={index} style={{width: "100%"}} src={each} alt={attibutes.map(e => e)}/>)
           }
         </Zoom>
       </div>

@@ -54,7 +54,7 @@ class MobileContainer extends Component {
                 </Menu.Item>
 
                 <Menu.Item position='left'>
-                <Link to ='/' className='navLink' ><Icon name ='heartbeat' className='navIcon'></Icon>Health travel</Link>
+                <Link to ='/' className='navLink' ><Icon name ='heartbeat' className='navIcon'></Icon></Link>
                 </Menu.Item>
 
                 

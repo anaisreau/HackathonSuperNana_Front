@@ -1,5 +1,5 @@
 import React  from 'react';
-import { Button, Card, Container, Image } from 'semantic-ui-react'
+import { Button, Card, Image } from 'semantic-ui-react'
 import './TreatmentChoice.css';
 import Orion_tooth from '../icons/Orion_tooth.png'
 import Orion_fertility from '../icons/Orion_fertility.png'
@@ -12,36 +12,41 @@ const TreatmentChoice = () => {
 
   return (
     <>
-      <Container>
-
-        <Container  className='cards' >
-          <Card fluid className='card'>
+  <h1>Research by Treatment</h1>
+<Card.Group>
+       
+          <Card>
             <Image src={Orion_tooth} wrapped ui={false} id='toothImg'/>
-            <Card.Content className='cardContent'>
-              <Card.Header  className='cardHeader'>DENTISTRY</Card.Header>
-                <Card.Description className='cardDesc'>
+            <Card.Content >
+              <Card.Header  >DENTISTRY</Card.Header>
+                <Card.Description >
                   Dental prosthesis
-                  <br/>
-                  Implants
-                <Link className='cardsLink'
+                 
+                  Implants </Card.Description>
+                  </Card.Content>
+                  <Card.Content extra>
+                <Link
                   to={{
                     pathname: '/resulttreatment',
                     setTreatment: 'Dentist'}}>
                   <Button className='buttonTreatment'>View results</Button>
                 </Link>
-              </Card.Description>
+              
             </Card.Content>
           </Card>
           
 
-          <Card fluid value='surrogacy'className='card'>
+          <Card >
             <Image src={Orion_fertility} wrapped ui={false} id='procreationImg'/>
             <Card.Content className='cardContent'>
             <Card.Header name = 'surrogacy'className='cardHeader'>SURROGACY</Card.Header>
             <Card.Description className='cardDesc'>
                 In Vitro Fertilization (IVF)
                 <br/>
-                Male Infertility
+                Male Infertility              </Card.Description>
+
+                </Card.Content>
+                      <Card.Content extra>
                 <Link
                   to={{
                     pathname: '/resulttreatment',
@@ -49,13 +54,12 @@ const TreatmentChoice = () => {
                   }}>
                   <Button className='buttonTreatment'>View results</Button>
                 </Link>
-              </Card.Description>
             </Card.Content>
           </Card>
-        </Container>
+      
 
-        <Container className='cards'>
-          <Card fluid className='card'>
+        
+          <Card >
             <Image src={Orion_user} wrapped ui={false} id='cosmeticImg'/>
             <Card.Content className='cardContent'>
             <Card.Header name = 'cosmetic surgery' className='cardHeader'>COSMETIC SURGERY</Card.Header>
@@ -63,8 +67,10 @@ const TreatmentChoice = () => {
                 Breast Augmentation
                 <br/>
                 Face
-                <br/>
-                Implants capillaires
+                <br/>Implants capillaires</Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                
                 <Link
                   to={{
                     pathname: '/resulttreatment',
@@ -72,11 +78,10 @@ const TreatmentChoice = () => {
                   }}>
                   <Button className='buttonTreatment'>View results</Button>
                 </Link>
-              </Card.Description>
             </Card.Content>
           </Card>
 
-          <Card fluid className='card'>
+          <Card >
                 <Image src={Orion_weighing} wrapped ui={false} id='weighImg'/>
                 <Card.Content className='cardContent'>
                 <Card.Header name = 'weight loss surgery' className='cardHeader'>WEIGHT LOSS SURGERY</Card.Header>
@@ -84,6 +89,9 @@ const TreatmentChoice = () => {
                     Adjustable Gastric Banding
                     <br/>
                     Gastric Sleeve
+                    </Card.Description>
+                    </Card.Content>
+                    <Card.Content extra>
                     <Link
                       to={{
                         pathname: '/resulttreatment',
@@ -91,12 +99,9 @@ const TreatmentChoice = () => {
                       }}>
                       <Button className='buttonTreatment'>View results</Button>
                     </Link>
-                </Card.Description>
               </Card.Content>
             </Card>
-        </Container>
-
-      </Container>
+      </Card.Group>
     </>
   );
 }

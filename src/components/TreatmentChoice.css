@@ -1,48 +1,10 @@
-.cards {
-    display: flex;
-    flex-flow: column;
-}
-
-.cardsLink {
-    margin-right: 0px;
-}
-
-.card, ui container cards{
-    display: flex;
-    align-items: center;
-    margin: auto !important;
-    margin-bottom: 2vh !important;
-}
-
-.cardContent {
-    margin-left: 2vw;
-    text-align: center;
-    color: #e63946 !important;
-}
-
- .cardHeader {
-    font-size: 2.5em;
-    color: #e63946 ! important;
-}
-
-.cardDesc {
-    font-size: medium;
-    display: flex;
-    flex-flow: column;
-}
 
 #toothImg, #procreationImg, #cosmeticImg, #weighImg {
-    width: 15vw;
+    width: 10em;
+    margin: auto ;
     border-style:solid 1px !important;
     border-color: #e63946 !important;
     background-color :white!important; 
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
-.buttonTreatment {
-    background-color: #e63946 !important;
-    color: white !important;
-    font-size: 3vw !important;
-    margin-top: 10px !important;
-} 

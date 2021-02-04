@@ -26,7 +26,7 @@ function ResultTreatment(props) {
             {resultTreatment.filter( e=> e.Speciality === treatmentChoice)
             .map(e => {
                 return (
-                    <Container className='center'>
+                    
                         <Card fluid className='result'>
                             <Card.Content  >
                                 <Card.Header className='resTttHeader'>{e.ClinicName}</Card.Header>
@@ -40,7 +40,7 @@ function ResultTreatment(props) {
                                 </Card.Description>
                             </Card.Content>
                         </Card>
-                    </Container>
+                   
                 )
             })}
            <Link to='/searchtreatment'> <Button className='button'>Return to treatment Choice</Button></Link>

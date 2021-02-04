@@ -1,52 +1,42 @@
 p{
  text-align: center;
-
+ font-size: large;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ z-index: 10000000000000000px;
 }
 
-.logo{
-    display: block;
-    margin-top: 3vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-}
-
-.ResearchChoice{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10vh;
-}
-
-.aboutus{
-    background-color: #e63946 !important;
-    width: 35vw;
-    height: auto;
+.ui.button{
+    background-color: #e63947ea !important;
     color : white !important;
-    font-size: 3vw !important;
-    display: block !important;
-    margin-top: 4vh !important;
-    margin-left: auto !important;
-    margin-right: auto !important ;
-    margin-bottom: 2vh !important;
+    margin: auto !important;
+    display: flex !important;
+    
 }
 
 .textCont, .searchText {
     font-weight: bolder;
-    font-size: 3vw;
+    font-size: 1.5em;
+    text-transform: capitalize;
 }
 
 .textCont {
     color: #1E3557;
-    padding: 5vw;
+    padding: 2.5em;
 }
 
 .ui.page {
-    background-color: rgb(230,57,70,.95) !important;
+    background-color: rgba(54, 5, 9, 0.931)mportant;
     opacity: 0.5;
 }
 
 .landingIcon {
-    margin-bottom: 2vh;
+    margin-bottom: 20%;
+}
+
+i.icon{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
 
 .contactFiles {
@@ -72,3 +62,17 @@ p{
 .textPres {
     padding: 2vw;
 }
+
+.research{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  padding-bottom: 5em;
+  padding-top: 5em;
+}
+
+
+
+
+
+  

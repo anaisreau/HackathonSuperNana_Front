@@ -25,8 +25,9 @@ useEffect(() => {
 
     return (
         <>
+        <h2>News from Health</h2>
         <div className='blog_page'>
-            <h2>News from Health</h2>
+            
             
             {articleNews.filter(e =>e.source).map(e => { 
                 return (

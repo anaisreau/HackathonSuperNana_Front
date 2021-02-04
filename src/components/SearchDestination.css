@@ -5,37 +5,23 @@
     background-color : #e63946 !important; 
     color : white !important;
 }
-.searchDest {
-    padding :0.3em !important;
-    text-align: center;
-    color: #1E3557;
-}
-.btnCountry {
-    width: 20em;
-    padding: 1em !important;
-    margin-bottom: 0.2em;
-}
-@media (min-width: 200px) and (max-width: 480px) {
-.imgDiv {
-    width: 100%;
-    
-}
-.cityImg {
-    width: 100vw;
-    border-image-width: 1em;
-    block-size: inherit;
-    object-fit: cover;
-}}
 
-@media (min-width: 480px) and (max-width: 1280px) {
-    .imgDiv {
-        width: 100%;
-        
-    }
-    .cityImg {
-        width: 100vw;
-        border-image-width: 1em;
-        block-size: inherit;
-        object-fit: cover;
-    }
+
+.ui.cards{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin : auto ! important;
+    width: 60%;
+    margin-top: 3em !important;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.ui.button{
+   display: flex !important;
+   justify-content: center !important;
 }

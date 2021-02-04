@@ -1,12 +1,12 @@
 .nav {
     background:#1d3557 !important;
-    font-size: 5vw;
+    font-size: large;
 }
 
 .navLink {
-    font-size: 5vw;
+    font-size: large;
 }
 
 .navIcon {
-    width: 2vw;
+    width: 2.5em;
 }
